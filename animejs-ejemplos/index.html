@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ejemplos de Anime.js</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #111827;
+        color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 30px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1000px;
+        text-align: center;
+      }
+
+      .header {
+        margin-bottom: 45px;
+      }
+
+      .header h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+      }
+
+      .header p {
+        color: #cbd5e1;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      .examples {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        gap: 25px;
+      }
+
+      .card {
+        background: #1f2937;
+
+        border: 1px solid #374151;
+        border-radius: 18px;
+
+        padding: 30px 25px;
+
+        text-align: left;
+
+        transition:
+          transform 0.25s ease,
+          border-color 0.25s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        border-color: #94a3b8;
+      }
+
+      .number {
+        color: #94a3b8;
+
+        font-size: 0.85rem;
+
+        text-transform: uppercase;
+
+        letter-spacing: 1px;
+
+        margin-bottom: 12px;
+      }
+
+      .card h2 {
+        font-size: 1.35rem;
+
+        margin-bottom: 12px;
+      }
+
+      .card p {
+        color: #cbd5e1;
+
+        line-height: 1.6;
+
+        margin-bottom: 25px;
+
+        min-height: 75px;
+      }
+
+      .button {
+        display: inline-block;
+
+        text-decoration: none;
+
+        background: white;
+        color: #111827;
+
+        padding: 12px 20px;
+
+        border-radius: 10px;
+
+        font-weight: bold;
+
+        transition:
+          transform 0.2s ease,
+          opacity 0.2s ease;
+      }
+
+      .button:hover {
+        transform: scale(1.03);
+        opacity: 0.85;
+      }
+
+      footer {
+        margin-top: 40px;
+
+        color: #64748b;
+
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 600px) {
+        .header h1 {
+          font-size: 2.2rem;
+        }
+
+        .header p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Ejemplos de Anime.js</h1>
+
+        <p>
+          Selección de tres ejemplos de ejecución de la biblioteca Anime.js.
+        </p>
+      </header>
+
+      <section class="examples">
+        <!-- EJEMPLO 1 -->
+
+        <article class="card">
+          <div class="number">Ejemplo 01</div>
+
+          <h2>Animatable Follow Cursor</h2>
+
+          <p>Partículas animadas que reaccionan al movimiento del cursor.</p>
+
+          <a href="animatable-follow-cursor/index.html" class="button">
+            Ejecutar ejemplo
+          </a>
+        </article>
+
+        <!-- EJEMPLO 2 -->
+
+        <article class="card">
+          <div class="number">Ejemplo 02</div>
+
+          <h2>Canvas 2D</h2>
+
+          <p>Animación de partículas utilizando Canvas 2D y Anime.js.</p>
+
+          <a href="canvas-2d/index.html" class="button"> Ejecutar ejemplo </a>
+        </article>
+
+        <!-- EJEMPLO 3 -->
+
+        <article class="card">
+          <div class="number">Ejemplo 03</div>
+
+          <h2>Layered CSS Transforms</h2>
+
+          <p>
+            Figuras geométricas animadas mediante transformaciones y timelines.
+          </p>
+
+          <a href="layered-css-transforms/index.html" class="button">
+            Ejecutar ejemplo
+          </a>
+        </article>
+      </section>
+
+      <footer>Proyecto académico basado en ejemplos de Anime.js</footer>
+    </main>
+  </body>
+</html>

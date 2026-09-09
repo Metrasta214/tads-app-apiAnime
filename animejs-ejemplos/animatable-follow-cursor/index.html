@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Animatable follow cursor / Anime.js</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link href="../assets/css/styles.css" rel="stylesheet" />
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background: #000;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .particles {
+        --size: 15;
+        display: grid;
+        grid-template-columns: repeat(var(--size), 1fr);
+        grid-template-rows: repeat(var(--size), 1fr);
+        width: 80vmin;
+        height: 80vmin;
+      }
+
+      .particles div {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #fff;
+        transform-origin: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="particles"></div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
